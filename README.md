@@ -1,1 +1,2 @@
-Resource for W&B CI/CD course.
+This repo contains resource for W&B CI/CD course.
+
