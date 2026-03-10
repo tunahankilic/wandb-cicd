@@ -2,7 +2,7 @@ name: "Unit & Smoke tests"
 on:
   pull_request:
     paths:
-      - test-example/test_metrics.py
+      - test-example/**
 
   workflow_dispatch: 
 
@@ -26,5 +26,5 @@ jobs:
       - name: Install the project
         run: uv sync --locked --all-extras --dev
 
-      - run: |
-          pytest test-example/
+      - name: Run test script
+        run: uv run pytest test-example/test_metrics.py
