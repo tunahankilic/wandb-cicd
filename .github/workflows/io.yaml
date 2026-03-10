@@ -1,4 +1,4 @@
-name: Github Actions Demo
+name: io-workflow
 on: push
 
 jobs:
